@@ -2,7 +2,7 @@ const mqtt = require('mqtt');
 require("dotenv").config();
 
 // Konfigurasi broker MQTT
-const brokerUrl = `wss://${process.env.URL}`
+const brokerUrl = `${process.env.PROTOCOL}://${process.env.URL}`
 const options = {
     username: process.env.USER,
     password: process.env.PASSWORD
